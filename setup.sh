@@ -14,8 +14,6 @@ basics(){
 scratch(){
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
   git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-  git clone https://github.com/rkouskou/dotfiles.git
-  cd dotfiles
   cp .tmux.conf $HOME/
   cp .languages.toml $HOME/.config/helix/
   cp .config.toml $HOME/.config/helix/
