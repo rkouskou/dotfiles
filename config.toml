@@ -1,0 +1,19 @@
+theme = "catppuccin_mocha"
+
+[editor]
+color-modes = true
+line-number = "absolute"
+mouse = true
+bufferline = "multiple"
+true-color = true
+
+[editor.soft-wrap]
+enable = true
+
+[editor.file-picker]
+hidden = false
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
