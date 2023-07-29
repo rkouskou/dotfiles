@@ -14,9 +14,10 @@ basics(){
 scratch(){
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
   git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-  cp .tmux.conf $HOME/
-  cp .languages.toml $HOME/.config/helix/
-  cp .config.toml $HOME/.config/helix/
+  cp .tmux.conf $HOME
+  mkdir $HOME/.config/helix
+  cp languages.toml $HOME/.config/helix/
+  cp config.toml $HOME/.config/helix/
 }
 
 while getopts "rs" OPTION; do
