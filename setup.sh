@@ -10,26 +10,10 @@ sudo apt install helix --yes
 curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash - &&\
 sudo apt-get install -y nodejs
 sudo npm install --location=global pyright
-
-
-scratch(){
-  echo "Installing personalised libs for zsh, tmux and helix"
-  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-  git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-  cp .tmux.conf $HOME
-  mkdir $HOME/.config/helix
-  cp languages.toml $HOME/.config/helix/
-  cp config.toml $HOME/.config/helix/
-}
-
-while getopts "r:h" OPTION; do
-  case "$OPTION" in
-    r) 
-        echo "Reparing installed libs"
-        scratch
-        ;;
-    h) 
-        echo "Script options: [-r] repair installation, [-s] install from scratch"
-        ;; 
-  esac
-done
+echo "Installing personalised libs for zsh, tmux and helix"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+cp .tmux.conf $HOME
+mkdir $HOME/.config/helix
+cp languages.toml $HOME/.config/helix/
+cp config.toml $HOME/.config/helix/
