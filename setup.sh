@@ -7,6 +7,8 @@ sudo apt install ncdu --yes
 sudo add-apt-repository ppa:maveonair/helix-editor
 sudo apt update
 sudo apt install helix --yes
+curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash - &&\
+sudo apt-get install -y nodejs
 sudo npm install --location=global pyright
 
 
