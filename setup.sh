@@ -4,7 +4,7 @@ sudo apt install zsh --yes
 sudo apt install tmux --yes
 sudo apt install ranger --yes
 sudo apt install ncdu --yes
-sudo add-apt-repository ppa:maveonair/helix-editor
+sudo add-apt-repository ppa:maveonair/helix-editor -y
 sudo apt update
 sudo apt install helix --yes
 curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash - &&\
