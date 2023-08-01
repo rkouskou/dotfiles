@@ -17,3 +17,4 @@ mkdir $HOME/.config/helix
 cp languages.toml $HOME/.config/helix/
 cp config.toml $HOME/.config/helix/
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+zsh
