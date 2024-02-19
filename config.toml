@@ -3,17 +3,17 @@ theme = "catppuccin_mocha"
 [editor]
 color-modes = true
 line-number = "absolute"
-mouse = true
+mouse = false
 bufferline = "multiple"
-true-color = true
+rulers=[120]
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
 
 [editor.soft-wrap]
 enable = true
 
 [editor.file-picker]
 hidden = false
-
-[editor.cursor-shape]
-insert = "bar"
-normal = "block"
-select = "underline"
