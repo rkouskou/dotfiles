@@ -1,15 +1,15 @@
 #!/bin/bash
 echo "Installing zsh, tmux, ranger, helix and pyright"
-sudo apt install zsh --yes
-sudo apt install tmux --yes
-sudo apt install ranger --yes
-sudo apt install ncdu --yes
-sudo add-apt-repository ppa:maveonair/helix-editor -y
-sudo apt update
-sudo apt install helix --yes
-curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash - &&\
-sudo apt-get install -y nodejs
-sudo npm install --location=global pyright
+# sudo apt install zsh --yes
+# sudo apt install tmux --yes
+# sudo apt install ranger --yes
+# sudo apt install ncdu --yes
+# sudo add-apt-repository ppa:maveonair/helix-editor -y
+# sudo apt update
+# sudo apt install helix --yes
+# curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash - &&\
+# sudo apt-get install -y nodejs
+# sudo npm install --location=global pyright
 echo "Installing personalised libs for zsh, tmux and helix"
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 cp .tmux.conf $HOME
